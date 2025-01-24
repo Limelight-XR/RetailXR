@@ -75,4 +75,4 @@ crashlytics-build.properties
 
 
 # Sensitive Data
-openai_key.json
+.openai.txt
