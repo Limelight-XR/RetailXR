@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.meta.xr.sdk.all": "71.0.0",
+    "com.openai.unity": "8.4.5",
     "com.unity.collab-proxy": "2.6.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.7",
@@ -40,5 +41,15 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.openai",
+        "com.utilities"
+      ]
+    }
+  ]
 }
