@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "com.meta.xr.sdk.all": "71.0.0",
-    "com.openai.unity": "8.4.5",
     "com.unity.collab-proxy": "2.6.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.7",
@@ -10,6 +9,7 @@
     "com.unity.visualscripting": "1.9.4",
     "com.unity.xr.management": "4.5.0",
     "com.unity.xr.oculus": "4.3.0",
+    "com.srcnalt.openai-unity": "file:com.srcnalt.openai-unity",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -42,14 +42,5 @@
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
   },
-  "scopedRegistries": [
-    {
-      "name": "OpenUPM",
-      "url": "https://package.openupm.com",
-      "scopes": [
-        "com.openai",
-        "com.utilities"
-      ]
-    }
-  ]
+  "scopedRegistries": []
 }
