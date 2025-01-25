@@ -173,6 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8184883535570980312}
   - component: {fileID: 5964567729645661665}
+  - component: {fileID: 4018921000341163339}
   m_Layer: 0
   m_Name: Boundary
   m_TagString: Untagged
@@ -216,6 +217,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4018921000341163339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4447263405774053398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09dc5976ed37a742a84ad618005e858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6483896456042558355
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class AnchorBoundaryHandler : MonoBehaviour
 {
+    [SerializeField] private Material mat;
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("User Entered Area");
+        this.transform.parent.GetComponentInChildren<MeshRenderer>().material = mat;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("User Exited Area");
+        this.transform.parent.GetComponentInChildren<MeshRenderer>().material = null;
     }
 }
