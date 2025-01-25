@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/ZachTestScene.unity
-    guid: 934517cb22122c146b368410e618ec0f
+    path: Assets/Scenes/DannyUIScene.unity
+    guid: 89c89ced4d1451b4299cbc375b2bb132
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9595cb15063c5234ba7d9dd873ea36f7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d408512d404810c4e93d90998dfe4004, type: 2}
