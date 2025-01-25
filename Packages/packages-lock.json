@@ -98,13 +98,12 @@
       "url": "https://packages.unity.com"
     },
     "com.srcnalt.openai-unity": {
-      "version": "https://github.com/srcnalt/OpenAI-Unity.git",
+      "version": "file:com.srcnalt.openai-unity",
       "depth": 0,
-      "source": "git",
+      "source": "embedded",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.2.1"
-      },
-      "hash": "054467e2a2daccf7f23ff8f7165f1d832815dc70"
+      }
     },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
