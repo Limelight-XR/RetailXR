@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class AnchorBoundaryHandler : MonoBehaviour
 {
-    [SerializeField] private Material mat;
+    [SerializeField] private GameObject visualComponent;
 
     private void OnTriggerEnter(Collider other)
     {
-        this.transform.parent.GetComponentInChildren<MeshRenderer>().material = mat;
+        visualComponent.SetActive(false);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        this.transform.parent.GetComponentInChildren<MeshRenderer>().material = null;
+        visualComponent.SetActive(true);
     }
 }
