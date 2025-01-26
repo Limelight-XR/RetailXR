@@ -536,8 +536,8 @@ MonoBehaviour:
       - phoneme_events
       - word_events
   _configData:
-  - {fileID: 3346357823558206463}
-  _configurationId: 568ecaa1-1cca-41d2-983f-745454b3ae8c
+  - {fileID: 2552477114468215891}
+  _configurationId: 23f31eae-3249-4afc-9baf-4e25d57bb0f8
   _requestType: 0
   _requestTimeoutMs: 10000
   endpointConfiguration:
@@ -554,12 +554,12 @@ MonoBehaviour:
   isDemoOnly: 0
   useIntentAttributes: 1
   useConduit: 1
-  _manifestLocalPath: ConduitManifest-f991a294-90eb-4fb9-ad4d-896f186513e9.json
+  _manifestLocalPath: ConduitManifest-1ae088c8-5f3d-450c-84ec-55b84cd8e601.json
   excludedAssemblies:
   - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   relaxedResolution: 0
---- !u!114 &3346357823558206463
+--- !u!114 &2552477114468215891
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

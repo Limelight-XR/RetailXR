@@ -20,20 +20,26 @@ namespace OpenAI
         private OpenAIApi openai = new OpenAIApi();
 
         private List<ChatMessage> messages = new List<ChatMessage>();
-        private string prompt = "You are a helpful AI assistant called THE Zachary Sally, introduce yourself as THE Zachary Sally, and be pompous about it. Answer all questions within 50 words.";
+        public string prompt = "You are a helpful AI assistant running a retail store.";
 
         public AppDictationExperience voiceExperience;
+        public MeshRenderer voiceIndicator;
+        public Material activeMaterial;
+        public Material inactiveMaterial;
+        public bool canChat = false;
 
         private void Start()
         {
             button.onClick.AddListener(SendReply);
+            //voiceExperience.Deactivate();
         }
 
         void Update()
         {
-            if (OVRInput.Get(OVRInput.Button.Start))
+            if (OVRInput.Get(OVRInput.Button.Start) && canChat)
             {
-                voiceExperience.Activate();
+                voiceExperience.Toggle();
+                voiceIndicator.material = (voiceExperience.Active) ? activeMaterial : inactiveMaterial;
             }
         }
 

@@ -143,6 +143,8 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 11400000, guid: da4d414a6cf566849a30b873d7d66969, type: 2}
+  - {fileID: 6570386216977476563, guid: d408512d404810c4e93d90998dfe4004, type: 2}
+  - {fileID: 11400000, guid: 9595cb15063c5234ba7d9dd873ea36f7, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -796,7 +798,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: RetailXR
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -804,7 +806,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: RetailXR
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: RetailXR
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
