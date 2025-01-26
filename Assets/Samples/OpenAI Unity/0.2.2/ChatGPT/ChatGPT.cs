@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Oculus.Voice.Dictation;
+
+//lalalaalal
 
 namespace OpenAI
 {
     public class ChatGPT : MonoBehaviour
     {
-        [SerializeField] private InputField inputField;
+        [SerializeField] public InputField inputField;
         [SerializeField] private Button button;
         [SerializeField] private ScrollRect scroll;
         
@@ -17,11 +20,21 @@ namespace OpenAI
         private OpenAIApi openai = new OpenAIApi();
 
         private List<ChatMessage> messages = new List<ChatMessage>();
-        private string prompt = "Act as a random stranger in a chat room and reply to the questions. Don't break character. Don't ever mention that you are an AI model.";
+        private string prompt = "You are a helpful AI assistant called THE Zachary Sally, introduce yourself as THE Zachary Sally, and be pompous about it. Answer all questions within 50 words.";
+
+        public AppDictationExperience voiceExperience;
 
         private void Start()
         {
             button.onClick.AddListener(SendReply);
+        }
+
+        void Update()
+        {
+            if (OVRInput.Get(OVRInput.Button.Start))
+            {
+                voiceExperience.Activate();
+            }
         }
 
         private void AppendMessage(ChatMessage message)
@@ -37,7 +50,7 @@ namespace OpenAI
             scroll.verticalNormalizedPosition = 0;
         }
 
-        private async void SendReply()
+        public async void SendReply()
         {
             var newMessage = new ChatMessage()
             {
@@ -58,7 +71,7 @@ namespace OpenAI
             // Complete the instruction
             var completionResponse = await openai.CreateChatCompletion(new CreateChatCompletionRequest()
             {
-                Model = "gpt-4o-mini",
+                Model = "llama3.3-70b-mit",
                 Messages = messages
             });
 
